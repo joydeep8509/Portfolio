@@ -103,7 +103,7 @@ export const ContactSection = () => {
             <div className="pt-8">
               <h4 className="font-medium mb-4">Connect With Me</h4>
               <div className="flex space-x-4 justify-center">
-                <a href="www.linkedin.com/in/joydeep-bhandari-30ab6234b" target="_blank" rel="noopener noreferrer">
+                <a href="https://www.linkedin.com/in/joydeep-bhandari-30ab6234b" target="_blank" rel="noopener noreferrer">
                   <Linkedin />
                 </a>
                 <a href="https://www.instagram.com/joydeep9456?igsh=amc2bHZqZDZsb2di" target="_blank" rel="noopener noreferrer">
@@ -177,4 +177,5 @@ export const ContactSection = () => {
     </section>
   );
 };
+
 
