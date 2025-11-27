@@ -1,4 +1,4 @@
-import { ArrowDown, ArrowDown01 } from "lucide-react"
+import { ArrowDown} from "lucide-react"
 
 export const HeroSection = () => {
     return <section id="hero" 
@@ -14,9 +14,12 @@ export const HeroSection = () => {
                 <p className="text-lg md:text-xl text-muted-foreground max-2-2xl mx-auto opacity-0 animate-fade-in-delay-3">
                     A passionate Full Stack Developer skilled in building modern, scalable, and user-friendly applications. With expertise across front-end and back-end technologies, I love transforming ideas into digital solutions that make an impact. Curious, adaptable, and always learning. I thrive in dynamic environments where innovation meets execution.
                 </p>
-                <div className="pt-4 opacity-0 animate-fade-in-delay-4">
+                <div className="pt-4 opacity-0 animate-fade-in-delay-4 flex justify-center gap-4">
                     <a href="#projects" className="cosmic-button">
                         View My Work
+                    </a>
+                    <a href="https://drive.google.com/file/d/1mNBpwXTDTLE9EllxQ1d7xMAU60ox-tN0/view?usp=drive_link" className="px-6 py-2 rounded-full border border-primary text-primary hover:bg-primary/10 transition-colors duration-300" target="_blank">
+                        Download CV
                     </a>
                 </div>
             </div>
