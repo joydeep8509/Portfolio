@@ -9,7 +9,7 @@ export const AboutSection = () => {
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
                 <div className="space-y-6">
-                    <h3>Passionate web dev</h3>
+                    <h3>Passionate Full Stack Developer</h3>
                     <p className="text-muted-foreground">
                         Hi, I’m Joydeep Bhandari, a results-driven Full Stack Developer with a strong foundation in both front-end and back-end development.
                     </p>
@@ -21,9 +21,6 @@ export const AboutSection = () => {
                     <div className="flex flex-col sm:flex-row gap-4 pt-4 justify-center">
                         <a href="#contact" className="cosmic-button">
                             Get In Touch
-                        </a>
-                        <a href="https://drive.google.com/file/d/12OGi-_-Ox-80mOpq4RUatFVzKfgsIOS-/view?usp=sharing" className="px-6 py-2 rounded-full border border-primary text-primary hover:bg-primary/10 transition-colors duration-300">
-                            Download CV
                         </a>
                     </div>
                 </div>
@@ -75,8 +72,4 @@ export const AboutSection = () => {
             </div>
         </div>
     </section>
-
 }
-
-
-
