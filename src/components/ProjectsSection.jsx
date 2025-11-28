@@ -7,7 +7,7 @@ const projects = [
     description:
       "Developed JSTACK, a responsive job portal with search, filters, dynamic job pages, and employer job posting using HTML, CSS, JavaScript.",
     image: "/projectsimage/Job.png",
-    tags: ["Html", "Css", "Javascript"],
+    tags: ["HTML", "CSS", "JavaScript","Responsive UI"],
     demoUrl: "https://joydeep-job-portal.vercel.app/",
     githubUrl: "https://github.com/joydeep8509/Job---Portal",
   },
@@ -17,7 +17,7 @@ const projects = [
     description:
       "A modern full-stack React starter with SSR, HMR, TypeScript, and Tailwind CSS, featuring React Router APIs for data loading, optimized builds, and Docker-ready deployment.",
     image: "/projectsimage/Resume.png",
-    tags: ["React", "Typescript", "Tailwind"],
+    tags: ["React", "TypeScript", "React Router", "Tailwind CSS"],
     demoUrl: "https://resume-syncer.vercel.app/",
     githubUrl: "https://github.com/joydeep8509/ResumeSyncer",
   },
@@ -27,7 +27,7 @@ const projects = [
     description:
       "An elegant AI image generator web app using Imagine Art API. Generate images from text prompts with styles, aspect ratios, and instant download. Responsive, fast, and user-friendly.",
     image: "/projectsimage/Imaginator.png",
-    tags: ["Html", "Css", "Javascript"],
+    tags: ["HTML", "CSS", "JavaScript", "REST API", "Responsive UI"],
     demoUrl: "https://imaginator-neon.vercel.app/",
     githubUrl: "https://github.com/joydeep8509/ImageGinator",
   },
@@ -37,7 +37,7 @@ const projects = [
     description:
       "A Spring Boot WebSocket chat app enabling real-time communication between multiple users with STOMP, SockJS, and Thymeleaf integration.",
     image: "/projectsimage/Chatapp.png",
-    tags: ["Spring", "Html", "Tailwindcss"],
+    tags: ["Spring Boot", "WebSocket", "STOMP", "SockJS", "Thymeleaf", "Tailwind CSS"],
     // demoUrl: "#",
     githubUrl: "https://github.com/joydeep8509/ChatApp",
   },
