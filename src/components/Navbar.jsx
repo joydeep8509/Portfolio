@@ -1,4 +1,3 @@
-import { href } from "react-router-dom";
 import { cn } from "../lib/util";
 import { useEffect, useState } from "react";
 import { Menu, X } from "lucide-react";
@@ -6,9 +5,10 @@ import { Menu, X } from "lucide-react";
 const navItems = [
     { name : "Home", href: "#hero"},
     { name : "About", href: "#about"},
+    { name : "Experience", href: "#experience"},
     { name : "Skills", href: "#skills"},
     { name : "Projects", href: "#projects"},
-    { name : "Contact", href: "#contact"},
+    { name : "Contact", href: "#contact"}
 ];
 
 export const Navbar = () => {
@@ -69,5 +69,5 @@ export const Navbar = () => {
             </div>
             </div>
         </div>
-    </nav>;
+    </nav>
 }
