@@ -1,231 +1,128 @@
-const programmingSkills = [
+import { ArrowRight, ExternalLink, Github } from "lucide-react"
+
+const projects = [
   {
-    name: "C",
-    icon: (
-      <svg className="w-8 h-8 group-hover:scale-110 transition-transform duration-300" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0 0 48 48">
-        <path fill="#283593" fillRule="evenodd" d="M22.903,3.286c0.679-0.381,1.515-0.381,2.193,0 c3.355,1.883,13.451,7.551,16.807,9.434C42.582,13.1,43,13.804,43,14.566c0,3.766,0,15.101,0,18.867 c0,0.762-0.418,1.466-1.097,1.847c-3.355,1.883-13.451,7.551-16.807,9.434c-0.679,0.381-1.515,0.381-2.193,0 c-3.355-1.883-13.451-7.551-16.807-9.434C5.418,34.899,5,34.196,5,33.434c0-3.766,0-15.101,0-18.867 c0-0.762,0.418-1.466,1.097-1.847C9.451,10.837,19.549,5.169,22.903,3.286z" clipRule="evenodd"></path><path fill="#5c6bc0" fillRule="evenodd" d="M5.304,34.404C5.038,34.048,5,33.71,5,33.255 c0-3.744,0-15.014,0-18.759c0-0.758,0.417-1.458,1.094-1.836c3.343-1.872,13.405-7.507,16.748-9.38 c0.677-0.379,1.594-0.371,2.271,0.008c3.343,1.872,13.371,7.459,16.714,9.331c0.27,0.152,0.476,0.335,0.66,0.576L5.304,34.404z" clipRule="evenodd"></path><path fill="#fff" fillRule="evenodd" d="M24,10c7.727,0,14,6.273,14,14s-6.273,14-14,14 s-14-6.273-14-14S16.273,10,24,10z M24,17c3.863,0,7,3.136,7,7c0,3.863-3.137,7-7,7s-7-3.137-7-7C17,20.136,20.136,17,24,17z" clipRule="evenodd"></path><path fill="#3949ab" fillRule="evenodd" d="M42.485,13.205c0.516,0.483,0.506,1.211,0.506,1.784 c0,3.795-0.032,14.589,0.009,18.384c0.004,0.396-0.127,0.813-0.323,1.127L23.593,24L42.485,13.205z" clipRule="evenodd"></path>
-      </svg>
-    ),
+    id: 1,
+    title: "Job-Portal",
+    description:
+      "Developed JSTACK, a responsive job portal with search, filters, dynamic job pages, and employer job posting using HTML, CSS, JavaScript.",
+    image: "/projectsimage/Job.png",
+    tags: ["HTML", "CSS", "JavaScript","Responsive UI"],
+    demoUrl: "https://joydeep-job-portal.vercel.app/",
+    githubUrl: "https://github.com/joydeep8509/Job---Portal",
   },
   {
-    name: "C++",
-    icon: (
-      <div className="w-8 h-8 flex items-center justify-center overflow-hidden">
-        <svg
-          className="w-full h-full group-hover:scale-110 transition-transform duration-300"
-          xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 48 48"
-          preserveAspectRatio="xMidYMid meet"
-        >
-          <path
-            fill="#00549d"
-            fillRule="evenodd"
-            d="M22.903,3.286c0.679-0.381,1.515-0.381,2.193,0c3.355,1.883,13.451,7.551,16.807,9.434C42.582,13.1,43,13.804,43,14.566c0,3.766,0,15.101,0,18.867c0,0.762-0.418,1.466-1.097,1.847c-3.355,1.883-13.451,7.551-16.807,9.434c-0.679,0.381-1.515,0.381-2.193,0c-3.355-1.883-13.451-7.551-16.807-9.434C5.418,34.899,5,34.196,5,33.434c0-3.766,0-15.101,0-18.867c0-0.762,0.418-1.466,1.097-1.847C9.451,10.837,19.549,5.169,22.903,3.286z"
-          ></path>
-          <path
-            fill="#0086d4"
-            fillRule="evenodd"
-            d="M5.304,34.404C5.038,34.048,5,33.71,5,33.255c0-3.744,0-15.014,0-18.759c0-0.758,0.417-1.458,1.094-1.836c3.343-1.872,13.405-7.507,16.748-9.38c0.677-0.379,1.594-0.371,2.271,0.008c3.343,1.872,13.371,7.459,16.714,9.331c0.27,0.152,0.476,0.335,0.66,0.576L5.304,34.404z"
-          ></path>
-          <path
-            fill="#fff"
-            fillRule="evenodd"
-            d="M24,10c7.727,0,14,6.273,14,14s-6.273,14-14,14s-14-6.273-14-14S16.273,10,24,10z M24,17c3.863,0,7,3.136,7,7c0,3.863-3.137,7-7,7s-7-3.137-7-7C17,20.136,20.136,17,24,17z"
-          ></path>
-          <path
-            fill="#0075c0"
-            fillRule="evenodd"
-            d="M42.485,13.205c0.516,0.483,0.506,1.211,0.506,1.784c0,3.795-0.032,14.589,0.009,18.384c0.004,0.396-0.127,0.813-0.323,1.127L23.593,24L42.485,13.205z"
-          ></path>
-          <path fill="#fff" d="M31 21H33V27H31zM38 21H40V27H38z"></path>
-          <path fill="#fff" d="M29 23H35V25H29zM36 23H42V25H36z"></path>
-        </svg>
-      </div>
-    ),
+    id: 2,
+    title: "ResumeSyncer",
+    description:
+      "A modern full-stack React starter with SSR, HMR, TypeScript, and Tailwind CSS, featuring React Router APIs for data loading, optimized builds, and Docker-ready deployment.",
+    image: "/projectsimage/Resume.png",
+    tags: ["React", "TypeScript", "React Router", "Tailwind CSS"],
+    demoUrl: "https://resume-syncer.vercel.app/",
+    githubUrl: "https://github.com/joydeep8509/ResumeSyncer",
   },
   {
-    name: "Java",
-    icon: (
-      <svg className="w-8 h-8 group-hover:rotate-12 transition-transform duration-300" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0 0 48 48">
-        <path fill="#1565c0" d="M32.1,25.1c1.8-0.4,3.2,0.7,3.2,2c0,2.9-4,5.6-4,5.6s6.2-0.7,6.2-5.5 C37.5,24.1,34.5,23.3,32.1,25.1z M29.1,27.4c0,0,1.9-1.4,2.5-1.9c-4.8,1-15.6,1.1-15.6,0.3c0-0.8,3.5-1.6,3.5-1.6 s-7.8-0.1-7.8,2.2S21.9,28.9,29.1,27.4z"></path><path fill="#1565c0" d="M27.9,29.6c-4.5,1.5-12.8,1-10.4-1c-1.2,0-3,1-3,1.9c0,1.9,9,3.3,15.6,0.6L27.9,29.6z"></path><path fill="#1565c0" d="M18.7,32.7c-1.6,0-2.7,1.1-2.7,1.8c0,2.4,9.8,2.6,13.6,0.2l-2.5-1.6C24.3,34.4,17,34.6,18.7,32.7z"></path><path fill="#1565c0" d="M36.3,36.6c0-0.9-1.1-1.4-1.4-1.6c2.2,5.4-22.3,5-22.3,1.8c0-0.7,1.8-1.4,3.5-1.1l-1.4-0.8 C11.3,34.4,9,35.8,9,37C9,42.5,36.3,42.3,36.3,36.6z"></path><path fill="#1565c0" d="M39,38.6c-4.1,4.1-14.7,5.6-25.2,3.1C24.3,46.2,39,43.6,39,38.6z"></path><g><path fill="#f44336" d="M23.6,24.9c-1-1.6-1.7-2.9-2.7-5.5c-1.7-4.2,10.3-8.1,5.4-15.4c2.1,5.1-7.6,8.2-8.5,12.5 C17.1,20.4,23.6,24.9,23.6,24.9z"></path><path fill="#f44336" d="M24.1,18.7c0.9,2.3,3.9,4,0.7,7c6-2.2,3.5-5.6,2.2-7.8c-1.7-2.6,5.8-6.8,5.8-6.8 C27.4,11.7,22.9,14.3,24.1,18.7z"></path></g>
-      </svg>
-    ),
+    id: 3,
+    title: "Imaginator",
+    description:
+      "An elegant AI image generator web app using Imagine Art API. Generate images from text prompts with styles, aspect ratios, and instant download. Responsive, fast, and user-friendly.",
+    image: "/projectsimage/Imaginator.png",
+    tags: ["HTML", "CSS", "JavaScript", "REST API", "Responsive UI"],
+    demoUrl: "https://imaginator-neon.vercel.app/",
+    githubUrl: "https://github.com/joydeep8509/ImageGinator",
   },
   {
-    name: "Python",
-    icon: (
-      <svg className="w-8 h-8 group-hover:scale-125 transition-transform duration-300" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0 0 48 48">
-        <path fill="#0277bd" d="M24.047,5c-1.555,0.005-2.633,0.142-3.936,0.367c-3.848,0.67-4.549,2.077-4.549,4.67V14h9v2H15.22	h-4.35c-2.636,0-4.943,1.242-5.674,4.219c-0.826,3.417-0.863,5.557,0,9.125C5.851,32.005,7.294,34,9.931,34h3.632v-5.104	c0-2.966,2.686-5.896,5.764-5.896h7.236c2.523,0,5-1.862,5-4.377v-8.586c0-2.439-1.759-4.263-4.218-4.672	C27.406,5.359,25.589,4.994,24.047,5z M19.063,9c0.821,0,1.5,0.677,1.5,1.502c0,0.833-0.679,1.498-1.5,1.498	c-0.837,0-1.5-0.664-1.5-1.498C17.563,9.68,18.226,9,19.063,9z"></path><path fill="#ffc107" d="M23.078,43c1.555-0.005,2.633-0.142,3.936-0.367c3.848-0.67,4.549-2.077,4.549-4.67V34h-9v-2h9.343	h4.35c2.636,0,4.943-1.242,5.674-4.219c0.826-3.417,0.863-5.557,0-9.125C41.274,15.995,39.831,14,37.194,14h-3.632v5.104	c0,2.966-2.686,5.896-5.764,5.896h-7.236c-2.523,0-5,1.862-5,4.377v8.586c0,2.439,1.759,4.263,4.218,4.672	C19.719,42.641,21.536,43.006,23.078,43z M28.063,39c-0.821,0-1.5-0.677-1.5-1.502c0-0.833,0.679-1.498,1.5-1.498	c0.837,0,1.5,0.664,1.5,1.498C29.563,38.32,28.899,39,28.063,39z"></path>
-      </svg>
-    ),
+    id: 4,
+    title: "Chat-App",
+    description:
+      "A Spring Boot WebSocket chat app enabling real-time communication between multiple users with STOMP, SockJS, and Thymeleaf integration.",
+    image: "/projectsimage/Chatapp.png",
+    tags: ["Spring Boot", "WebSocket", "STOMP", "SockJS", "Thymeleaf", "Tailwind CSS"],
+    // demoUrl: "#",
+    githubUrl: "https://github.com/joydeep8509/ChatApp",
   },
-  {
-    name: "JavaScript (ES6+)",
-    icon: (
-      <svg className="w-8 h-8 group-hover:rotate-12 transition-transform duration-300" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0 0 48 48">
-        <path fill="#ffd600" d="M6,42V6h36v36H6z"></path><path fill="none" stroke="#000001" strokeMiterlimit="10" strokeWidth="3.3" d="M23.783,22.352v9.819 c0,3.764-4.38,4.022-6.283,0.802"></path><path fill="none" stroke="#000001" strokeMiterlimit="10" strokeWidth="3.3" d="M34.69,25.343 c-1.739-2.727-5.674-2.345-5.84,0.558c-0.214,3.757,6.768,2.938,6.247,7.107c-0.365,2.92-4.874,3.858-7.193-0.065"></path>
-      </svg>
-    ),
-  },
-  {
-    name: "TypeScript",
-    icon: (
-      <svg className="w-8 h-8 group-hover:rotate-12 transition-transform duration-300" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0 0 48 48">
-        <rect width="36" height="36" x="6" y="6" fill="#1976d2"></rect><polygon fill="#fff" points="27.49,22 14.227,22 14.227,25.264 18.984,25.264 18.984,40 22.753,40 22.753,25.264 27.49,25.264"></polygon><path fill="#fff" d="M39.194,26.084c0,0-1.787-1.192-3.807-1.192s-2.747,0.96-2.747,1.986 c0,2.648,7.381,2.383,7.381,7.712c0,8.209-11.254,4.568-11.254,4.568V35.22c0,0,2.152,1.622,4.733,1.622s2.483-1.688,2.483-1.92 c0-2.449-7.315-2.449-7.315-7.878c0-7.381,10.658-4.469,10.658-4.469L39.194,26.084z"></path>
-      </svg>
-    ),
-  }
 ]
 
-const frontendSkills = [
-  // 🎨 Frontend Development
-  {
-    name: "HTML",
-    icon: (
-      <svg className="w-8 h-8 group-hover:scale-125 transition-transform duration-300" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0 0 48 48">
-        <path fill="#E65100" d="M41,5H7l3,34l14,4l14-4L41,5L41,5z"></path><path fill="#FF6D00" d="M24 8L24 39.9 35.2 36.7 37.7 8z"></path><path fill="#FFF" d="M24,25v-4h8.6l-0.7,11.5L24,35.1v-4.2l4.1-1.4l0.3-4.5H24z M32.9,17l0.3-4H24v4H32.9z"></path><path fill="#EEE" d="M24,30.9v4.2l-7.9-2.6L15.7,27h4l0.2,2.5L24,30.9z M19.1,17H24v-4h-9.1l0.7,12H24v-4h-4.6L19.1,17z"></path>
-      </svg>
-    ),
-  },
-  {
-    name: "CSS",
-    icon: (
-      <svg className="w-8 h-8 group-hover:scale-125 transition-transform duration-300" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0 0 48 48">
-        <path fill="#0277BD" d="M41,5H7l3,34l14,4l14-4L41,5L41,5z"></path><path fill="#039BE5" d="M24 8L24 39.9 35.2 36.7 37.7 8z"></path><path fill="#FFF" d="M33.1 13L24 13 24 17 28.9 17 28.6 21 24 21 24 25 28.4 25 28.1 29.5 24 30.9 24 35.1 31.9 32.5 32.6 21 32.6 21z"></path><path fill="#EEE" d="M24,13v4h-8.9l-0.3-4H24z M19.4,21l0.2,4H24v-4H19.4z M19.8,27h-4l0.3,5.5l7.9,2.6v-4.2l-4.1-1.4L19.8,27z"></path>
-      </svg>
-    ),
-  },
-  {
-    name: "JQuery",
-    icon: (
-      <svg className="w-8 h-8 group-hover:scale-110 transition-transform duration-300" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128"><path fill="#0868AC" d="M9.625 32.181C-1.404 48.032-.031 68.657 8.394 85.501c.2.404.41.801.617 1.198l.394.759.246.437.439.786c.262.461.53.92.804 1.379l.459.756c.304.491.615.976.933 1.46l.398.614c.439.655.888 1.309 1.352 1.951l.039.05.228.308c.401.553.814 1.099 1.232 1.639l.464.59c.373.469.752.935 1.138 1.399l.435.52a75.27 75.27 0 001.586 1.812l.033.033.061.068a80.44 80.44 0 001.612 1.699l.517.521c.423.426.853.845 1.287 1.262l.527.5c.58.547 1.166 1.083 1.764 1.607l.028.022.307.262c.527.456 1.063.909 1.603 1.353l.664.529c.441.354.887.702 1.336 1.044l.714.543c.496.365.995.724 1.499 1.075l.546.387.15.107c.478.329.967.646 1.456.963l.63.42c.75.474 1.51.943 2.279 1.396l.63.355c.565.326 1.134.646 1.71.959.312.168.632.327.946.488.407.213.811.429 1.225.636l.283.137.501.242c.641.306 1.287.607 1.94.897l.41.184a66.92 66.92 0 002.263.941l.551.217c.704.271 1.418.539 2.135.791l.268.093c.787.275 1.581.53 2.381.779l.575.172c.814.245 1.619.538 2.458.693 53.339 9.727 68.833-32.053 68.833-32.053-13.013 16.953-36.111 21.425-57.996 16.446-.829-.187-1.633-.446-2.442-.685l-.609-.185a72.498 72.498 0 01-2.352-.765l-.323-.117a72.245 72.245 0 01-2.074-.769l-.582-.229c-.752-.297-1.5-.607-2.239-.931l-.447-.198a92.857 92.857 0 01-1.889-.879l-.546-.262c-.491-.239-.977-.493-1.461-.743-.324-.171-.654-.332-.975-.51a58.591 58.591 0 01-1.751-.982l-.591-.33a81.221 81.221 0 01-2.28-1.397l-.615-.41a59.283 59.283 0 01-1.623-1.079l-.522-.367a89.287 89.287 0 01-1.534-1.109l-.679-.514a64.473 64.473 0 01-1.384-1.082l-.617-.495a82.693 82.693 0 01-1.724-1.453l-.189-.159a83.466 83.466 0 01-1.812-1.647l-.511-.491c-.441-.42-.875-.843-1.302-1.277l-.51-.509a70.541 70.541 0 01-1.598-1.69l-.079-.084a67.39 67.39 0 01-1.621-1.844l-.424-.504a70.602 70.602 0 01-1.167-1.442l-.427-.532a78.406 78.406 0 01-1.347-1.794c-12.15-16.574-16.516-39.432-6.805-58.204m25.629-2.434c-7.977 11.478-7.543 26.844-1.321 38.983a50.581 50.581 0 003.528 5.889c1.195 1.713 2.52 3.751 4.106 5.127a48.111 48.111 0 001.79 1.858l.472.465a51.69 51.69 0 001.828 1.698l.074.064.018.018a55.268 55.268 0 002.135 1.767l.485.378a54.08 54.08 0 002.233 1.631l.065.049c.336.232.678.448 1.019.672l.483.319c.544.349 1.095.689 1.655 1.015l.235.136c.483.278.972.552 1.463.818l.521.271c.339.177.678.358 1.023.53l.155.07c.703.346 1.412.68 2.136.995l.472.194c.579.246 1.164.486 1.75.71l.75.275c.533.198 1.068.378 1.607.559l.727.233c.767.238 1.525.539 2.324.672 41.183 6.823 50.691-24.886 50.691-24.886-8.57 12.343-25.168 18.233-42.879 13.635a50.376 50.376 0 01-2.333-.674l-.701-.227a45.423 45.423 0 01-1.631-.562l-.736-.274a56.418 56.418 0 01-1.756-.708l-.473-.2a47.728 47.728 0 01-2.148-.999c-.363-.177-.72-.364-1.078-.548l-.622-.32a44.502 44.502 a01-1.363-.77l-.326-.185a47.844 47.844 0 01-1.651-1.008l-.498-.332a61.759 61.759 0 01-1.069-.707 57.456 57.456 0 01-2.226-1.628l-.501-.395c-7.752-6.12-13.898-14.486-16.819-23.971-3.062-9.836-2.402-20.878 2.903-29.84" /></svg>
-    ),
-  },
-  {
-    name: "Bootstrap",
-    icon: (
-      <svg className="w-8 h-8 group-hover:scale-125 transition-transform duration-300" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0 0 48 48">
-        <path fill="#7c4dff" d="M7.373,11.443C7.293,9.132,9.094,7,11.529,7h24.946c2.435,0,4.236,2.132,4.155,4.443	c-0.077,2.221,0.023,5.097,0.747,7.443c0.726,2.353,1.951,3.84,3.957,4.031v2.167c-2.006,0.191-3.23,1.678-3.957,4.031	c-0.724,2.345-0.824,5.222-0.747,7.443C40.71,38.868,38.909,41,36.475,41H11.529c-2.434,0-4.236-2.132-4.155-4.443	c0.077-2.221-0.023-5.097-0.747-7.443c-0.726-2.353-1.954-3.84-3.96-4.031v-2.167c2.006-0.191,3.233-1.678,3.96-4.031	C7.35,16.54,7.451,13.664,7.373,11.443z"></path><path fill="#fff" d="M27.073,23.464v-0.028c1.853-0.32,3.299-2.057,3.299-3.97c0-1.352-0.52-2.498-1.504-3.312	c-0.981-0.812-2.357-1.241-3.981-1.241H17.45V33.08h7.475c1.942,0,3.555-0.474,4.663-1.372c1.109-0.899,1.696-2.207,1.696-3.783	C31.283,25.544,29.593,23.756,27.073,23.464z M23.59,22.608h-3.181V17.29h3.784c2.076,0,3.219,0.911,3.219,2.565	C27.413,21.63,26.055,22.608,23.59,22.608z M20.409,24.834h3.759c2.716,0,4.092,0.981,4.092,2.916c0,1.932-1.357,2.953-3.925,2.953	h-3.926V24.834z"></path>
-      </svg>
-    ),
-  },
-  {
-    name: "React",
-    icon: (
-      <svg className="w-8 h-8 group-hover:animate-spin" viewBox="0 0 128 128">
-        <circle cx="64" cy="64" r="10" fill="#61DAFB" />
-        <g stroke="#61DAFB" strokeWidth="6" fill="none">
-          <ellipse cx="64" cy="64" rx="52" ry="20" />
-          <ellipse cx="64" cy="64" rx="52" ry="20" transform="rotate(60 64 64)" />
-          <ellipse cx="64" cy="64" rx="52" ry="20" transform="rotate(120 64 64)" />
-        </g>
-      </svg>
-    ),
-  },
-  {
-    name: "Tailwind CSS",
-    icon: (
-      <svg className="w-8 h-8 group-hover:scale-125 transition-transform duration-300" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0 0 48 48">
-        <path fill="#00acc1" d="M24,9.604c-6.4,0-10.4,3.199-12,9.597c2.4-3.199,5.2-4.398,8.4-3.599 c1.826,0.456,3.131,1.781,4.576,3.247C27.328,21.236,30.051,24,36,24c6.4,0,10.4-3.199,12-9.598c-2.4,3.199-5.2,4.399-8.4,3.6 c-1.825-0.456-3.13-1.781-4.575-3.247C32.672,12.367,29.948,9.604,24,9.604L24,9.604z M12,24c-6.4,0-10.4,3.199-12,9.598 c2.4-3.199,5.2-4.399,8.4-3.599c1.825,0.457,3.13,1.781,4.575,3.246c2.353,2.388,5.077,5.152,11.025,5.152 c6.4,0,10.4-3.199,12-9.598c-2.4,3.199-5.2,4.399-8.4,3.599c-1.826-0.456-3.131-1.781-4.576-3.246C20.672,26.764,17.949,24,12,24 L12,24z"></path>
-      </svg>
-    ),
-  },
-];
-
-const backendAndDatabaseSkills = [
-  // 🖥️ Backend
-  {
-    name: "Hibernate",
-    icon: (
-      <svg className="w-8 h-8 group-hover:scale-110 transition-transform duration-300" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
-        <path fill="#59666c" d="m29.246 3.766 23.168 40.129-23.18 40.19-23.156-40.19Zm69.508 120.468L75.586 84.105l23.18-40.19 23.156 40.19Zm0 0" />
-        <path fill="#bcae79" d="M75.594 3.766H29.258L52.43 43.898h46.35ZM52.406 124.23H98.75L75.594 84.102H29.219Zm0 0" />
-      </svg>
-    ),
-  },
-  {
-    name: "Spring/Spring Boot",
-    icon: (
-      <svg className="w-8 h-8 group-hover:scale-110 transition-transform duration-300" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0 0 48 48">
-        <path fill="#8bc34a" d="M43.982,23.635c0.069-4.261-0.891-9.328-2.891-15.273l-1.568-4.662l-2.13,4.433 c-0.114,0.237-0.244,0.469-0.38,0.698C33.514,5.827,28.974,4,24,4C12.954,4,4,12.954,4,24c0,11.046,8.954,20,20,20s20-8.954,20-20 C44,23.877,43.984,23.758,43.982,23.635z"></path><path fill="#fff" d="M39.385 32.558c-3.123 4.302-8.651 4.533-13.854 4.442H18.75h-1.938c4.428-1.593 7.063-1.972 9.754-3.4 5.068-2.665 10.078-8.496 11.121-14.562-1.93 5.836-7.779 10.85-13.109 12.889-3.652 1.393-10.248 2.745-10.248 2.745l-.267-.145C9.573 32.268 9.437 22.214 17.6 18.968c3.574-1.423 6.993-.641 10.854-1.593 4.122-1.012 8.89-4.208 10.83-8.375C41.456 15.667 44.07 26.106 39.385 32.558L39.385 32.558zM15.668 38.445C15.386 38.795 14.955 39 14.505 39c-.823 0-1.495-.677-1.495-1.5s.677-1.5 1.495-1.5c.341 0 .677.118.941.336C16.086 36.855 16.186 37.805 15.668 38.445L15.668 38.445z"></path>
-      </svg>
-    ),
-  },
-  {
-    name: "MySQL",
-    icon: (
-      <svg className="w-8 h-8 group-hover:scale-110 transition-transform duration-300" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0 0 48 48">
-        <path fill="#00796b" d="M0.002,35.041h1.92v-7.085l2.667,6.057c0.329,0.755,0.779,1.022,1.662,1.022 s1.315-0.267,1.644-1.022l2.667-5.902v6.93h1.92v-7.258c0-0.697-0.277-1.035-0.849-1.209c-1.367-0.43-2.285-0.059-2.7,0.872 l-2.735,6.16l-2.649-6.16c-0.398-0.93-1.332-1.302-2.7-0.872C0.277,26.748,0,27.085,0,27.782v7.258H0.002z"></path><path fill="#00796b" d="M13.441,29.281h1.92v4.055c-0.015,0.2,0.064,0.731,0.99,0.745c0.472,0.008,2.821,0,2.85,0v-4.8h1.92 c0.008,0,0,5.968,0,5.993c0.01,1.472-1.828,1.662-2.673,1.687h-5.006v-0.96c0.01,0,4.787,0.001,4.801,0 c1.088-0.115,0.959-0.714,0.959-0.896v-0.064H16.19c-1.67-0.015-2.735-0.751-2.747-1.59C13.441,33.373,13.479,29.317,13.441,29.281 z"></path><path fill="#f57f17" d="M22.081,35.041h4.807c0.63,0,1.242-0.132,1.728-0.36c0.81-0.372,1.144-0.875,1.144-1.536v-1.368 c0-1.476-1.83-1.536-2.88-1.536h-1.92c-0.755,0-0.87-0.456-0.96-0.96v-0.96c0.09-0.384,0.258-0.9,0.923-0.96 c0.773,0,4.836,0,4.836,0v-0.96h-4.566c-0.755,0-3.114,0.09-3.114,1.92v1.187c0,0.84,0.738,1.524,2.34,1.692 c0.18,0.012,0.36,0.024,0.539,0.024c0,0,1.866-0.036,1.92-0.024c1.08,0,0.96,0.84,0.96,0.96v0.96c0,0.132-0.03,0.96-0.971,0.96 c-0.072,0-4.789,0-4.789,0V35.041z"></path><path fill="#f57f17" d="M40.32,33.08c0,1.159,0.655,1.809,2.392,1.939c0.162,0.011,0.325,0.021,0.488,0.021H48v-0.96h-4.435 c-0.991,0-1.325-0.416-1.325-1.011v-6.669h-1.92V33.08z"></path><path fill="#f57f17" d="M30.704,33.121v-4.8c0-1.02,0.5-1.724,1.916-1.92h0.672h3.447h0.525 c1.416,0.196,2.08,0.899,2.08,1.92v4.782c0,0.827-0.215,1.271-0.916,1.559L39.916,36h-2.16l-1.07-0.96h-1.257l-2.136,0.012 c-0.309,0-0.635-0.043-0.993-0.141C31.226,34.618,30.704,34.054,30.704,33.121z M32.624,33.121c0.098,0.467,0.473,0.96,1.14,0.96 h1.864l-1.068-0.96h2.175l0.519,0.482c0,0,0.186-0.152,0.186-0.482c0-0.33-0.016-4.8-0.016-4.8c-0.098-0.434-0.538-0.96-1.188-0.96 h-2.471c-0.749,0-1.14,0.548-1.14,1.058L32.624,33.121L32.624,33.121z"></path><path fill="#00796b" d="M46.199,25.389c-1.031-0.028-1.818,0.068-2.491,0.351c-0.191,0.081-0.496,0.083-0.528,0.323 c0.105,0.11,0.121,0.275,0.205,0.41c0.16,0.26,0.432,0.609,0.674,0.791c0.265,0.2,0.538,0.414,0.821,0.587 c. . ."></path>
-      </svg>
-    ),
-  },
-];
-
-const toolsSkills = [
-  // 🛠️ Tools & Platforms
-  {
-    name: "GitHub",
-    icon: (
-      <svg className="w-8 h-8 group-hover:scale-125 transition-transform duration-300" viewBox="0 0 24 24" fill="currentColor">
-        <path d="M12 .5C5.73.5.75 5.48.75 11.75c0 4.93 3.18 9.11 7.59 10.58.56.1.76-.24.76-.53 0-.26-.01-1-.02-1.96-3.09.67-3.74-1.49-3.74-1.49-.51-1.3-1.25-1.65-1.25-1.65-1.02-.7.08-.69.08-.69 1.13.08 1.72 1.16 1.72 1.16 1.01 1.73 2.65 1.23 3.3.94.1-.74.39-1.23.71-1.51-2.47-.28-5.06-1.24-5.06-5.5 0-1.21.43-2.2 1.13-2.98-.11-.28-.49-1.4.11-2.92 0 0 .93-.3 3.05 1.13a10.56 10.56 0 0 1 2.78-.38c.94.01 1.88.13 2.78.38 2.11-1.44 3.05-1.13 3.05-1.13.6 1.52.22 2.64.11 2.92.7.78 1.13 1.77 1.13 2.98 0 4.27-2.6 5.21-5.08 5.48.4.34.76 1.02.76 2.06 0 1.49-.01 2.7-.01 3.07 0 .29.2.64.77.53C19.07 20.86 22.25 16.68 22.25 11.75 22.25 5.48 17.27.5 12 .5z"></path>
-      </svg>
-    ),
-  },
-  {
-    name: "VS Code",
-    icon: (
-      <svg className="w-8 h-8 group-hover:scale-125 transition-transform duration-300" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0 0 48 48">
-        <path fill="#29b6f6" d="M44,11.11v25.78c0,1.27-0.79,2.4-1.98,2.82l-8.82,4.14L34,33V15L33.2,4.15l8.82,4.14 C43.21,8.71,44,9.84,44,11.11z"></path><path fill="#0277bd" d="M9,33.896L34,15V5.353c0-1.198-1.482-1.758-2.275-0.86L4.658,29.239 c-0.9,0.83-0.849,2.267,0.107,3.032c0,0,1.324,1.232,1.803,1.574C7.304,34.37,8.271,34.43,9,33.896z"></path><path fill="#0288d1" d="M9,14.104L34,33v9.647c0,1.198-1.482,1.758-2.275,0.86L4.658,18.761 c-0.9-0.83-0.849-2.267,0.107-3.032c0,0,1.324-1.232,1.803-1.574C7.304,13.63,8.271,13.57,9,14.104z"></path>
-      </svg>
-    ),
-  },
-  {
-    name: "IntelliJ IDEA",
-    icon: (
-      <svg className="w-8 h-8 group-hover:scale-125 transition-transform duration-300" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0 0 48 48">
-        <path fill="#f57c00" d="M14.125 35.188L4.438 27.563 9.25 18.625 23.062 24z"></path><path fill="#1e88e5" d="M44 14.688L43.25 37.813 27.875 44 18.625 38 32.125 24z"></path><path fill="#2962ff" d="M44 14.688L31.812 29.063 26.25 11 31.563 4.625z"></path><path fill="#ab47bc" d="M34.688 19.625L23.25 37.188 7.25 43 9.813 34 13.125 22.875z"></path><path fill="#e91e63" d="M13.125 22.875L4 19.813 9.813 4 22.313 5.5 34.688 19.625z"></path><path fill="#000001" d="M11 11H36V36H11z"></path><path fill="#fff" d="M14 31.5H23V33H14zM20.5 15.875L20.5 14 15.5 14 15.5 15.875 17 15.875 17 22.375 15.5 22.375 15.5 24.25 20.5 24.25 20.5 22.375 19.159 22.375 19.159 15.875zM25.375 24.5c-1.875 0-2.871-1.098-3.25-1.548l1.411-1.605c.255.282.964 1.028 1.839 1.028 1.125 0 1.375-1.125 1.375-1.75V14H29v6.625c0 .624 0 1.625-.75 2.625C27.725 23.95 26.5 24.5 25.375 24.5z"></path>
-      </svg>
-    ),
-  },
-];
-
-// Render helper: categories list
-const skillCategories = [
-  { id: "programming", title: "Programming Languages", items: programmingSkills },
-  { id: "frontend", title: "Frontend", items: frontendSkills },
-  { id: "backendanddatabase", title: "Backend & Database", items: backendAndDatabaseSkills },
-  { id: "tools", title: "Tools", items: toolsSkills }
-];
-
-export const SkillsSection = () => {
+export const ProjectsSection = () => {
   return (
-    <section id="skills" className="py-24 relative bg-secondary/30">
+    <section id="projects" className="py-24 px-4 relative">
       <div className="container mx-auto max-w-5xl">
-        <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center">
-          My <span className="text-primary"> Skills</span>
+        <h2 className="text-3xl md:text-4xl font-bold mb-4 text-center">
+          Featured <span className="text-primary">Projects</span>
         </h2>
+        <p className="text-center text-muted-foreground mb-12 max-w-2xl mx-auto">
+          Here are some of my recent projects. Each project was carefully crafted
+          with attention to details, performance and user experience.
+        </p>
 
-        <div className="space-y-10">
-          {skillCategories.map((cat) => (
-            <div key={cat.id}>
-              <h3 className="text-2xl font-semibold mb-6">{cat.title}</h3>
-              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-                {cat.items.map((skill, idx) => (
-                  <div
-                    key={`${cat.id}-${idx}`}
-                    className="bg-card p-6 rounded-lg shadow-xs card-hover group"
-                  >
-                    <div className="flex items-center gap-3 text-left mb-4">
-                      {skill.icon}
-                      <h4 className="font-semibold text-lg">{skill.name}</h4>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          {projects.map((project, index) => {
+            const isLast = index === projects.length - 1
+            return (
+              <div
+                key={project.id}
+                className={`group bg-card rounded-lg overflow-hidden shadow-xs card-hover ${
+                  isLast ? "lg:col-span-1 lg:col-start-2" : ""
+                }`}
+              >
+                <div className="h-48 overflow-hidden">
+                  <img
+                    src={project.image}
+                    alt={project.title}
+                    className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
+                  />
+                </div>
+
+                <div className="p-6">
+                  <div className="flex flex-wrap gap-2 mb-4">
+                    {project.tags.map((tag, i) => (
+                      <span
+                        key={i}
+                        className="px-2 py-1 text-xs font-medium border rounded-full bg-secondary text-secondary-foreground"
+                      >
+                        {tag}
+                      </span>
+                    ))}
+                  </div>
+
+                  <h3 className="text-xl font-semibold mb-1">{project.title}</h3>
+                  <p className="text-muted-foreground text-sm mb-4">
+                    {project.description}
+                  </p>
+                  <div className="flex justify-between items-center">
+                    <div className="flex space-x-3">
+                      <a
+                        href={project.demoUrl}
+                        target="blank"
+                        className="text-foreground/80 hover:text-primary transition-colors duration-300"
+                      >
+                        <ExternalLink size={20} />
+                      </a>
+                      <a
+                        href={project.githubUrl}
+                        target="blank"
+                        className="text-foreground/80 hover:text-primary transition-colors duration-300"
+                      >
+                        <Github size={20} />
+                      </a>
                     </div>
                   </div>
-                ))}
+                </div>
               </div>
-            </div>
-          ))}
+            )
+          })}
+        </div>
+
+        <div className="text-center mt-12">
+          <a
+            className="cosmic-button w-fit flex items-center mx-auto gap-2"
+            target="blank"
+            href="https://github.com/joydeep8509"
+          >
+            Check My Github <ArrowRight size={16} />
+          </a>
         </div>
       </div>
     </section>
-  );
-};
+  )
+}
