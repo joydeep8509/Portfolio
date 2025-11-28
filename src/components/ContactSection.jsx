@@ -1,4 +1,4 @@
-import { Facebook, Gamepad2Icon, Instagram, Linkedin, Mail, MapPin, Phone, Send } from "lucide-react";
+import { Facebook, Instagram, Linkedin, Mail, MapPin, Phone, Send } from "lucide-react";
 import { cn } from "../lib/util";
 import { useToast } from "../hooks/use-toast";
 import { useState, useRef, useEffect } from "react";
@@ -64,7 +64,7 @@ export const ContactSection = () => {
                 <div className="text-left">
                   <h4 className="font-medium">Email</h4>
                   <a
-                    href="mailto:joydeepbhandari76@gmail.com"
+                    href="mailto:hello@gmail.com"
                     className="text-muted-foreground hover:text-primary transition-colors"
                   >
                     joydeepbhandari76@gmail.com
@@ -103,7 +103,7 @@ export const ContactSection = () => {
             <div className="pt-8">
               <h4 className="font-medium mb-4">Connect With Me</h4>
               <div className="flex space-x-4 justify-center">
-                <a href="https://www.linkedin.com/in/joydeep-bhandari-30ab6234b" target="_blank" rel="noopener noreferrer">
+                <a href="www.linkedin.com/in/joydeep-bhandari-30ab6234b" target="_blank" rel="noopener noreferrer">
                   <Linkedin />
                 </a>
                 <a href="https://www.instagram.com/joydeep9456?igsh=amc2bHZqZDZsb2di" target="_blank" rel="noopener noreferrer">
@@ -177,6 +177,3 @@ export const ContactSection = () => {
     </section>
   );
 };
-
-
-
