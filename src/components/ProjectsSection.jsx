@@ -38,7 +38,7 @@ const projects = [
       "A Spring Boot WebSocket chat app enabling real-time communication between multiple users with STOMP, SockJS, and Thymeleaf integration.",
     image: "/projectsimage/Chatapp.png",
     tags: ["Spring Boot", "WebSocket", "STOMP", "SockJS", "Thymeleaf", "Tailwind CSS"],
-    // demoUrl: "#",
+    demoUrl: "https://joydeep-chat-app.up.railway.app/chat",
     githubUrl: "https://github.com/joydeep8509/ChatApp",
   },
 ]
@@ -126,3 +126,4 @@ export const ProjectsSection = () => {
     </section>
   )
 }
+
