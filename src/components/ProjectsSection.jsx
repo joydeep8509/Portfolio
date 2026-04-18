@@ -7,7 +7,7 @@ const projects = [
     description:
       "Developed JSTACK, a responsive job portal with search, filters, dynamic job pages, and employer job posting using HTML, CSS, JavaScript.",
     image: "/projectsimage/Job.png",
-    tags: ["HTML", "CSS", "JavaScript","Responsive UI"],
+    tags: ["HTML", "CSS", "JavaScript", "Responsive UI"],
     demoUrl: "https://joydeep-job-portal.vercel.app/",
     githubUrl: "https://github.com/joydeep8509/Job---Portal",
   },
@@ -41,6 +41,35 @@ const projects = [
     demoUrl: "https://joydeep-chat-app.up.railway.app/chat",
     githubUrl: "https://github.com/joydeep8509/ChatApp",
   },
+  {
+    id: 5,
+    title: "E-Commerce Full Stack",
+    description:
+      "A full-stack e-commerce app with React, Spring Boot, MySQL, JWT auth, cart, product management, search, and responsive UI.",
+    image: "/projectsimage/e-com.png",
+    tags: [
+      "React.js",
+      "Spring Boot",
+      "MySQL",
+      "JWT",
+      "REST API",
+      "Tailwind CSS",
+      "Axios",
+      "Context API"
+    ],
+    // demoUrl: "#",
+    githubUrl: "https://github.com/joydeep8509/Ecom-Fullstack",
+  },
+  {
+    id: 6,
+    title: "ResumeSyncer",
+    description:
+      "A modern full-stack React starter with SSR, HMR, TypeScript, and Tailwind CSS, featuring React Router APIs for data loading, optimized builds, and Docker-ready deployment.",
+    image: "/projectsimage/Resume.png",
+    tags: ["React", "TypeScript", "React Router", "Tailwind CSS"],
+    demoUrl: "https://resume-syncer.vercel.app/",
+    githubUrl: "https://github.com/joydeep8509/ResumeSyncer",
+  }
 ]
 
 export const ProjectsSection = () => {
@@ -55,15 +84,14 @@ export const ProjectsSection = () => {
           with attention to details, performance and user experience.
         </p>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
           {projects.map((project, index) => {
             const isLast = index === projects.length - 1
             return (
               <div
                 key={project.id}
-                className={`group bg-card rounded-lg overflow-hidden shadow-xs card-hover ${
-                  isLast ? "lg:col-span-1 lg:col-start-2" : ""
-                }`}
+                className={`group bg-card rounded-lg overflow-hidden shadow-xs card-hover ${isLast ? "lg:col-span-1 lg:col-start-2" : ""
+                  }`}
               >
                 <div className="h-48 overflow-hidden">
                   <img
@@ -126,4 +154,3 @@ export const ProjectsSection = () => {
     </section>
   )
 }
-
